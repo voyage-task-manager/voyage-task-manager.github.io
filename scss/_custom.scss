@@ -1,0 +1,36 @@
+form.col-md-8 {
+  margin: auto;
+  & > * {
+    margin-bottom: 0.5em;
+  }
+  & textarea {
+    height: 16em
+  }
+  button {
+    border: thin solid $theme-primary;
+    color: $theme-primary;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $theme-primary;
+    }
+  }
+}
+
+footer {
+  padding: 5px 15px;
+  overflow: hidden;
+  .left {
+    float: left;
+    width: 50%;
+    text-align: left
+  }
+  .right {
+    width: 50%;
+    float: left;
+    text-align: right;
+  }
+}
