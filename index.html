@@ -11,6 +11,7 @@
     <title>Voyage Task Manager</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -21,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.css">
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/new-age.min.css" rel="stylesheet">
@@ -174,14 +175,13 @@
       <div class="container">
         <h2>Entre em contato conosco <i class="fa fa-heart"></i></h2>
         <div class="columns">
-            <form action="" class="col-md-8">
-                <input type="text" class="form-control input" placeholder="Nome Completo" required="required" oninvalid="this.setCustomValidity('Este campo é obrigatório para enviar uma mensagem.')"
+            <form action="https://formspree.io/felipelopesrita@gmail.com" method="POST" class="col-md-8">
+                <input type="text" name="name" class="form-control input" placeholder="Nome Completo" required="required" oninvalid="this.setCustomValidity('Este campo é obrigatório para enviar uma mensagem.')"
                 oninput="setCustomValidity('')">
-                <input type="email" class="form-control" placeholder="Email" required="required" oninvalid="this.setCustomValidity(this.value == '' ? 'Este campo é obrigatório para enviar uma mensagem.' : 'Informe um email válido')"
+                <input type="email" name="_replyto" class="form-control" placeholder="Email" required="required" oninvalid="this.setCustomValidity(this.value == '' ? 'Este campo é obrigatório para enviar uma mensagem.' : 'Informe um email válido')"
                 oninput="setCustomValidity('')">
-                <input type="text" class="form-control" placeholder="Assunto" required="required" oninvalid="this.setCustomValidity('Este campo é obrigatório para enviar uma mensagem.')"
-                oninput="setCustomValidity('')">
-                <textarea required="required" name="" id="" class="form-control" placeholder="Digite aqui a mensagem que deseja enviar" oninvalid="this.setCustomValidity('Este campo é obrigatório para enviar uma mensagem.')"
+                <input type="hidden" name="_subject" value="Voyage Contato">
+                <textarea required="required" name="message" class="form-control" placeholder="Digite aqui a mensagem que deseja enviar" oninvalid="this.setCustomValidity('Este campo é obrigatório para enviar uma mensagem.')"
                 oninput="setCustomValidity('')"></textarea>
                 <button type="submit" class="btn btn-outline btn-xl">Enviar mensagem</button>
             </form>
