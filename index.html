@@ -178,6 +178,7 @@
             <form action="https://formspree.io/felipelopesrita@gmail.com" method="POST" class="col-md-8">
                 <input type="text" name="name" class="form-control input" placeholder="Nome Completo" required="required" oninvalid="this.setCustomValidity('Este campo é obrigatório para enviar uma mensagem.')"
                 oninput="setCustomValidity('')">
+                <input type="hidden" name="_next" value="https://voyage-task-manager.github.io" />
                 <input type="email" name="_replyto" class="form-control" placeholder="Email" required="required" oninvalid="this.setCustomValidity(this.value == '' ? 'Este campo é obrigatório para enviar uma mensagem.' : 'Informe um email válido')"
                 oninput="setCustomValidity('')">
                 <input type="hidden" name="_subject" value="Voyage Contato">
